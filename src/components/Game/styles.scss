@@ -1,0 +1,39 @@
+@import '../../styles/themes.scss';
+
+.game {
+  max-width: 36em;
+  margin: 0 auto;
+  padding: 0 1em;
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    font-size: $h1;
+  }
+  button {
+    font-size: 1em;
+    background-color: none;
+    border: 0.1em solid $white;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    color: $white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  button:hover {
+    background-color: $primary;
+    color:$white;
+  }
+}
+
+.cardBoard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.8em
+}
+
+.result {
+  margin-top: 1em;
+}

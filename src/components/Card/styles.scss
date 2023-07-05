@@ -1,0 +1,33 @@
+@import '../../styles/themes.scss';
+
+.card {
+  position: relative;
+  cursor: pointer;
+  img {
+    display: block;
+    width: 100%;
+    border: 2px solid $white;
+    border-radius: 0.3em;
+  }
+  .front {
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+  }
+
+  .back {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+  }
+}
+
+.flipped {
+  .front {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+  }
+  .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+  }
+}
